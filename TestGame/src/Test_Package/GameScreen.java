@@ -29,12 +29,14 @@ public class GameScreen extends JPanel implements Runnable{
     }
 
     public void startGameThread(){
-        gamethread = new Thread(gamethread);
+        gamethread = new Thread(this);
         gamethread.start();
     }
 
-    @Override
+//    @Override
     public void run() {
-
+//        while (gamethread != null) {
+//            System.out.println("app is running");
+//        }
     }
 }
