@@ -48,6 +48,8 @@ public class GameScreen extends JPanel implements Runnable{
 
         while (gamethread != null) {
 
+            System.out.println("This app is running");
+
             update();
 
             repaint();
